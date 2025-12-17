@@ -1,0 +1,12 @@
+#include "SecuritySystem.hpp"
+#include "DetectionSystem.hpp"
+
+int main() {
+    SecuritySystem security;
+    DetectionSystem detection(&security);
+
+    detection.simulateSmoke();
+    detection.simulateGas();
+
+    return 0;
+}
